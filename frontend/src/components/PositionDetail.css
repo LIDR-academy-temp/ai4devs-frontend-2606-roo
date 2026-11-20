@@ -1,0 +1,66 @@
+.position-kanban-scroll {
+    overflow-x: auto;
+    padding-bottom: .5rem;
+}
+
+.position-kanban-stage {
+    height: 100%;
+    min-height: 8rem;
+}
+
+.position-kanban-target {
+    background-color: var(--bs-primary-bg-subtle);
+    border-color: var(--bs-primary) !important;
+}
+
+.position-kanban-handle {
+    display: inline-grid;
+    place-items: center;
+    flex: 0 0 44px;
+    height: 44px;
+    margin: -.5rem -.5rem 0 0;
+    border-radius: var(--bs-border-radius);
+    touch-action: none;
+}
+
+.position-kanban-handle:hover {
+    background-color: var(--bs-tertiary-bg);
+}
+
+.position-kanban-draggable {
+    cursor: grab;
+}
+
+.position-kanban-selected {
+    --bs-card-bg: var(--bs-secondary-bg);
+    cursor: grabbing;
+}
+
+.position-kanban-dragging {
+    border-style: dashed;
+}
+
+.position-kanban-dragging > .card-body {
+    visibility: hidden;
+}
+
+.position-kanban-drag-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    pointer-events: none;
+}
+
+.position-kanban-drag-preview > .card {
+    box-shadow: var(--bs-box-shadow);
+}
+
+@media (min-width: 768px) {
+    .position-kanban-column {
+        min-width: 13rem;
+    }
+}
