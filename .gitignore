@@ -26,3 +26,11 @@ yarn-error.log*
 .vscode
 
 # .env
+
+# Aux docs
+requerimientos.md
+
+# Openspec
+/.agents
+/.claude
+/openspec
